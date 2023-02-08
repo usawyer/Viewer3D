@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Documentation of 3DViewer_v2.0
+    </title>
+</head>
+
+<body>
+    <h1 align="center"> Documentation of 3DViewer_v2.0</h1>
+
+    <h3>Introduction</h3>
+    <hr color="black" noshade />
+    <p>This is the project that implement a program to view 3D wireframe models (3D Viewer) in the C programming
+        language. </p>
+
+    <p>The models themselves must be loaded from .obj files and be viewable on the screen with the ability to rotate,
+        scale and translate. </p>
+
+    <p>The program allows to change settings and save the captured images and create gif-animations.</p>
+
+    <h3>Installation</h3>
+    <hr color="black" noshade />
+
+    <p>Can be opened in QT creator or create the executable using <b>make install</b>.</p>
+
+    <h3>Description</h3>
+    <hr color="black" noshade />
+    <p>The app supports the following features.</p>
+    <ul>
+        <li>load a wireframe model from an obj-file</li>
+        <li>translate the model in relation to the X, Y, Z axes</li>
+        <li>rotate the model relative to its X, Y, Z axes</li>
+        <li>scale the model by a given value to its X, Y, Z axes</li>
+        <li>output model information: file name, number of vertices and edges</li>
+        <li>customize model</li>
+        <li>save settings between program restarts</li>
+        <li>save images</li>
+        <li>make gif-animations</li>
+    </ul>
+
+    <h3>How to use</h3>
+    <hr color="black" noshade />
+    <ol>
+        <li>To load the model, click "open file" and select the required file.</li>
+        <li>To translate, rotate or scale the model, you can either click on the required button "<" / ">" or hold down
+                the buttons "<" / ">" for the corresponding axis or set the desired value in the box. If you change the
+                value in the box then before doing other transformations reset to zero the value in the spinbox.</li>
+        <li>To change the projection type in the "type of projection" field, select the desired projection type: central
+            or parallel.</li>
+        <li>The "settings of the edges" field allows to:
+            <ul>
+                <li>change the type of drawn line (solid or dashed)</li>
+                <li>change the color of the lines by clicking on the "choose..." button and selecting the appropriate
+                    color, then clicking "OK"</li>
+                <li>change the line thickness (1.0, 2.5 or 5.0)</li>
+            </ul>
+        </li>
+        <li>The "settings of the vertices" field allows to:
+            <ul>
+                <li>change the display method (none, circle, square)</li>
+                <li>change the color of the points by clicking on the "choose..." button and selecting the appropriate
+                    color, then clicking "OK"</li>
+                <li>change the size of the points (5.0, 10.0 or 15.0).</li>
+            </ul>
+        </li>
+        <li>The "set background color" field allows you to change the color of the background by clicking on the
+            "choose..." button and selecting the appropriate color and then clicking "OK". </li>
+        <li>To take a screenshot:
+            <ul>
+                <li>click the appropriate button</li>
+                <li>write a name, and select the location that file is being saved to and choose the required format:
+                    .bmp or .jpeg</li>
+                <li>press "Save".</li>
+            </ul>
+        </li>
+        <li>To make a GIF-animation:
+            <ul>
+                <li> press the appropriate button</li>
+                <li> change the model</li>
+                <li> write a name, and select the location that file is being saved to</li>
+                <li> press "Save".</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>Notes</h3>
+    <hr color="black" noshade />
+    <ol>
+        <li>Don't use large files. Up to 10 Mb.</li>
+        <li>Don't enter incorrect types to save the file.</li>
+    </ol>
+
+</body>
+
+</html>
